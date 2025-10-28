@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sua Marca Aqui - Soluções Completas</title>
+
+    <style>
+        /* Estilo básico para a seção Hero (imagem de fundo) */
+        #inicio {
+            /* Imagem de fundo placeholder - SUBSTITUA PELA SUA */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x800.png?text=Sua+Imagem+Hero') no-repeat center center;
+            background-size: cover;
+            min-height: 70vh; /* Altura mínima da seção */
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        section {
+            padding: 5rem 0; /* Espaçamento padrão para seções */
+        }
+        /* Ajuste para logo de parceiros */
+        .partner-logo {
+            max-height: 60px; /* Ajuste a altura conforme necessário */
+            filter: grayscale(100%); /* Efeito cinza */
+            transition: filter 0.3s ease;
+            opacity: 0.7;
+        }
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sua Marca Aqui</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto d-none d-lg-flex align-items-center">
+                     <span class="navbar-text me-3">
+                         <i class="bi bi-telephone-fill text-primary me-1"></i> (XX) XXXX-XXXX
+                     </span>
+                     <span class="navbar-text">
+                         <i class="bi bi-envelope-fill text-primary me-1"></i> seuemail@exemplo.com
+                     </span>
+                     </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-3">Soluções Completas Para Você</h1>
+            <p class="lead mb-4 col-md-8 mx-auto">Oferecemos as melhores opções do mercado com atendimento personalizado e focado nas suas necessidades.</p>
+            <a href="#contato" class="btn btn-primary btn-lg px-4">Fale Conosco Agora</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="bg-light">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <img src="https://via.placeholder.com/600x400.png?text=Nossa+Equipe" alt="Quem Somos" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-6 fw-bold mb-3">Sobre Nossa Empresa</h2>
+                        <p class="lead text-muted mb-4">Somos especialistas em encontrar as melhores soluções para proteger o que é mais importante para você.</p>
+                        <p>Com anos de experiência no mercado, nossa equipe dedicada está pronta para oferecer um atendimento consultivo e transparente, ajudando você a tomar as melhores decisões.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Atendimento Personalizado</li>
+                            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Ampla Gama de Produtos</li>
+                            <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Suporte Contínuo</li>
+                        </ul>
+                        <a href="#servicos" class="btn btn-outline-primary">Conheça Nossos Serviços</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="container">
+                <h2 class="text-center display-6 fw-bold mb-5">Nossas Soluções</h2>
+                <div class="row text-center g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="icon-circle bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                                    <i class="bi bi-shield-lock-fill fs-2"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Segurança Patrimonial</h5>
+                                <p class="card-text text-muted">Proteja seus bens mais valiosos com as melhores coberturas do mercado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                         <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="icon-circle bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                                    <i class="bi bi-heart-pulse-fill fs-2"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Saúde e Bem-Estar</h5>
+                                <p class="card-text text-muted">Planos de saúde completos para você, sua família e sua empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                         <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <div class="icon-circle bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                                     <i class="bi bi-car-front-fill fs-2"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Proteção Veicular</h5>
+                                <p class="card-text text-muted">Seguro auto com as coberturas ideais para seu carro ou moto.</p>
+                            </div>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+        </section>
+
+         <section id="parceiros" class="bg-light">
+            <div class="container">
+                <h2 class="text-center display-6 fw-bold mb-5">Nossos Parceiros</h2>
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+1" alt="Parceiro 1" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+2" alt="Parceiro 2" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+3" alt="Parceiro 3" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+4" alt="Parceiro 4" class="img-fluid partner-logo">
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+5" alt="Parceiro 5" class="img-fluid partner-logo">
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="https://via.placeholder.com/150x60.png?text=Logo+6" alt="Parceiro 6" class="img-fluid partner-logo">
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+         <section id="contato">
+            <div class="container">
+                <h2 class="text-center display-6 fw-bold mb-5">Fale Conosco</h2>
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4">Envie sua Mensagem</h4>
+                                <form action="/enviar-contato" method="POST">
+                                     <div class="mb-3">
+                                        <label for="nome" class="form-label">Nome:</label>
+                                        <input type="text" class="form-control" id="nome" name="nome" required>
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail:</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label">Telefone:</label>
+                                        <input type="tel" class="form-control" id="telefone" name="telefone">
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="mensagem" class="form-label">Mensagem:</label>
+                                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                         <h4 class="fw-bold mb-3">Nossos Contatos</h4>
+                         <p class="lead"><i class="bi bi-telephone-fill text-primary me-2"></i> (XX) XXXX-XXXX</p>
+                         <p class="lead"><i class="bi bi-whatsapp text-success me-2"></i> (XX) YYYYY-YYYY</p>
+                         <p class="lead"><i class="bi bi-envelope-fill text-primary me-2"></i> seuemail@exemplo.com</p>
+                         <p class="lead"><i class="bi bi-geo-alt-fill text-danger me-2"></i> Seu Endereço Completo, Nº<br>Bairro, Cidade - UF</p>
+                         
+                         <h4 class="fw-bold mt-4 mb-3">Horário de Atendimento</h4>
+                         <p class="lead"><i class="bi bi-clock-fill text-primary me-2"></i> Segunda a Sexta: 09:00 às 18:00</p>
+                         
+                         <div class="mt-4 ratio ratio-16x9">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.145700207593!2d-46.65650008502213!3d-23.56312478468164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9f9de!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886001111!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; <%= new Date().getFullYear() %> Sua Marca Aqui. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+
+    <a href="https://wa.me/55XXXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

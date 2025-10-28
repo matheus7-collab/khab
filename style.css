@@ -1,0 +1,67 @@
+/* Estilos Gerais (Opcional) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Exemplo de fonte */
+}
+
+/* Ajustes na Navbar (opcional) */
+.navbar-brand {
+    font-size: 1.5rem; /* Aumenta um pouco a marca */
+}
+.nav-link {
+    font-weight: 500;
+}
+
+/* Círculo para Ícones (Seção Serviços) */
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/* Botão Flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px; /* Tamanho do ícone */
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex; /* Para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Efeito hover (opcional) */
+.whatsapp-float:hover {
+    color: white;
+    background-color: #1ebe57;
+}
+
+/* Ajuste para telas menores (opcional) */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    #inicio {
+         min-height: 50vh; /* Diminui altura no mobile */
+         padding: 5rem 0;
+    }
+    section {
+        padding: 3rem 0; /* Diminui padding no mobile */
+    }
+}
